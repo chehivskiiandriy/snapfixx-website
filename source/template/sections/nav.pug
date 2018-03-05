@@ -1,0 +1,15 @@
+- var items = ["Welcome", "How it works", "Contact"]
+- var itemsId = ["banner", "about", "what_people_say"]
+
+nav.nav
+    a.icon__menu(href="#"): i.fa.fa-bars(aria-hidden="true")
+    ul.mobile__menu
+        each item, key in items
+                li: a.mobile__link(href="#"+itemsId[key])= item 
+    
+    .nav__menu
+        each item, key in items
+            if item === 'Welcome'
+                a.nav__link.nav__link--active(href="#"+itemsId[key])= item
+            else
+                a.nav__link(href="#"+itemsId[key])= item   

@@ -1,0 +1,36 @@
+.container {
+    max-width: 1024px;
+    margin: auto 2rem;
+
+    @media (min-width: 1600px){ 
+        max-width: 1860px;
+    }
+    
+    @media (min-width: 1300px) and (max-width: 1599px) {
+        max-width: 1560px;
+    }
+    
+    @media (min-width: 1000px) and (max-width: 1299px) { 
+        max-width: 1260px;
+    }
+    
+    @media (min-width: 700px) and (max-width: 999px) { 
+        max-width: 960px;
+    }
+
+    @media (min-width: 500px) and (max-width: 699px) { 
+        max-width: 640px;
+    }
+
+    @media (max-width: 499px) { 
+        max-width: 460px;
+    }
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+.grey {
+    background-color: #393f49 !important;
+  }

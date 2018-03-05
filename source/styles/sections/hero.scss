@@ -1,0 +1,58 @@
+.hero {
+    background: url('../images/header_background.jpg') center/cover no-repeat;    
+    background-size: cover;
+    min-height: 500px;
+    padding-top: 100px;    
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    
+
+    &__title {
+        font: bold 6.875rem "Kartika" ;
+        letter-spacing: 5px;
+        @media (min-width: 1600px){ 
+            font-size: 7.2rem;
+        }
+        
+        @media (min-width: 1300px) and (max-width: 1599px) {
+            font-size: 7rem;
+        }
+        
+        @media (min-width: 1000px) and (max-width: 1299px) { 
+            font-size: 6.875rem;
+        }
+        
+        @media (min-width: 600px) and (max-width: 999px) { 
+            font-size: 6rem;
+        }
+        
+        @media (min-width: 420px) and (max-width: 599px) { 
+            font-size: 4.5rem;
+        }
+        
+        @media (max-width: 419px) { 
+            font-size: 3rem;
+        }
+    }
+
+    &__button {
+        text-transform: uppercase;
+        font: 1.125rem "RobotoRegular";
+        background-color: #7ca5d9;
+        border: none;
+        border-radius: 3.125rem;
+        padding: 0.9375rem 3.125rem;
+        margin-top: 1rem;
+        outline: none;
+
+        &:hover {
+            background-color: #7CA5B4;
+        }
+
+        @media (max-width: 999px) { 
+            margin-top: 10rem;
+            font-size: 1.5rem;
+        }
+    }
+}

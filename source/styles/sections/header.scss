@@ -1,0 +1,40 @@
+.header {
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    
+    @media screen and (max-width:700px) {
+        height: 50px;    
+        // background-color: #393f49;
+    }
+
+    @media screen and (min-width:1560px) {
+        height: 80px;    
+        // background-color: #393f49;
+    }
+    
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center; 
+        padding: 15px 0;
+    }
+
+    &__logo {
+        font-size: 1.625rem;
+        font-family: "Reef";
+        text-transform: uppercase;
+        color: #fff;
+
+        &:hover {
+            color: #d1d7d2;
+        }
+    }
+
+}

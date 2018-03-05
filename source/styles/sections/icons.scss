@@ -1,0 +1,95 @@
+.icons {
+    background: #45b681;
+    text-align: center;
+    
+    .container {
+        padding: 40px 0;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin: 0;
+
+        @media (max-width: 991px){
+            justify-content: center;
+        }
+
+    }
+
+    &__border {
+        border: 2px solid transparent;
+        border-radius: 50px;
+        min-height: 325px;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.3s;
+
+        &--active {
+            border: 2px dashed #fff;
+        }
+
+        @media (min-width: 780px) and (max-width: 1000px) { 
+            min-height: 300px;
+         }
+        @media (min-width: 460px) and (max-width: 779px) { 
+            min-height: 275px;
+         }
+        @media (max-width: 459px) {
+            min-height: 225px;
+        }
+
+        @media (max-width: 419px) { 
+            margin: 25px;
+        }
+    }
+
+    &__item {
+        width: 25%;
+        @media (min-width: 780px) and (max-width: 1000px) { 
+            width: 33%;
+         }
+        @media (min-width: 460px) and (max-width: 779px) { 
+            width: 50%;
+         }
+        @media (max-width: 459px) {
+            width: 100%;
+        }
+    }
+
+    .icon {
+        width: 129px;
+        height: 119px;
+        background: url('../images/icons.png') center;
+        margin: 30px auto;
+
+        @media (max-width: 419px) { 
+            margin: 20px auto;
+        }
+
+        &__1 {
+            background-position: -60px 0;
+        }
+
+        &__2 {
+            background-position: -235px 0;
+        }
+
+        &__3 {
+            background-position: -481px 0;
+        }
+
+        &__4 {
+            background-position: -700px 0;
+        }
+    }
+
+    &__description {
+        padding: 5px 20px 0;
+        margin-bottom: auto;
+        font: 0.875rem "LuganskiyV";
+        color: #fff;
+    }
+}

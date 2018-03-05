@@ -1,0 +1,59 @@
+body {
+    font-family: $ff-main;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+html {
+    box-sizing: border-box;
+
+    @media (min-width: 1600px){ 
+        font-size: 1.5rem;
+    }
+    
+    @media (min-width: 1300px) and (max-width: 1599px) {
+        font-size: 1rem;
+    }
+    
+    @media (min-width: 1000px) and (max-width: 1299px) { 
+        font-size: 14px;
+    }
+    
+    @media (min-width: 500px) and (max-width: 999px) { 
+        font-size: 12px;
+    }
+
+    @media (max-width: 499px) { 
+        font-size: 10px;
+    }
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:focus {
+    outline: none;
+}
+
+button {
+    outline: none;
+}
+
+.clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

@@ -1,0 +1,91 @@
+.service {
+    height: 750px;
+    position: relative;
+
+    @media (min-width: 1560px) { 
+        height: 870px;
+    }
+
+    @media (min-width: 780px) and (max-width: 1000px) { 
+        height: 650px;
+    }
+    @media (min-width: 460px) and (max-width: 779px) { 
+        height: 550;
+    }
+    @media (max-width: 459px) {
+        height: 400px;
+    }
+
+    &__top {
+        height: 20%;
+        background: #fff;
+    }
+
+    &__center {
+        height: 35%;
+        background: #f3f3f3;
+    }
+
+    &__bottom {
+        height: 45%;
+        background: url('../images/service_bg.jpg');
+        font-size: 0.875rem;
+
+        @media (max-width: 419px) { 
+            font-size: 0.675rem;
+        }
+
+        .container {
+            text-align: center;
+            padding: 120px 0 0 0;
+            color: #fff;
+
+            @media (max-width: 419px) { 
+                padding: 65px 0 0 0;
+            }
+        }
+    }
+
+    &__title {
+        padding-bottom: 1.25rem;
+        font: 1.875rem "RalewayRegular";
+        letter-spacing: 7px;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    &__text {
+        transition: all 0.5s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        span {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        p {
+            margin: 10px 0;
+        }
+    }
+
+    &__img {
+        @include centerer-x();
+        
+        height: 53%;        
+        bottom: 31%;
+
+        @media (min-width: 460px) and (max-width: 779px) { 
+            height: 300px;
+        }
+    }
+}
